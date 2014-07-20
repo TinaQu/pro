@@ -1,7 +1,7 @@
 from django import forms
 from DiscussGroup.models import UserProfile
 from DiscussGroup.models import DiscussionGroup, MessageDetails, \
-    Model, ActivityDetails, AcceptRecord
+    Model, ActivityDetails, AcceptRecord,ModelMember
 from django.contrib.auth.models import User
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput())
@@ -30,28 +30,36 @@ class DiscussionGroupForm(forms.ModelForm):
         model = DiscussionGroup
         fields = ('GroupID','Tag')
 
+
+
 class MessageDetailsForm(forms.ModelForm):
-    Comment = forms.CharField(max_length=250,help_text='The max length is 250')
+    CommentMDF = forms.CharField(max_length=250,help_text='The max length is 250')
 
     class Meta:
         model = MessageDetails
-        fields = ('Comment')
+        fields = ("CommentMDF",)
 
 class ModelForm(forms.ModelForm):
-    ModelID = forms.CharField(max_length=50)
-    Tag = forms.CharField(max_length=250)
+    ModelID = forms.CharField(max_length=50,help_text='Please enter a model name')
+    Tag = forms.CharField(max_length=250,help_text='Please add some tags to the Model')
 
     class Meta:
         model = Model
         fields = ('ModelID','Tag')
 
+class ModelMemberForm(forms.ModelForm):
+
+    class Meta:
+        model = ModelMember
+        fields = ('ModelID','Member')
+
 
 class ActivityDetails(forms.ModelForm):
-    Comment = forms.CharField(max_length=250)
+    CommentAD = forms.CharField(max_length=250)
 
     class Meta:
         model = ActivityDetails
-        fields =( 'Comment' )
+        fields =( 'CommentAD', )
 
 class AcceptRecordForm(forms.ModelForm):
     class Meta:

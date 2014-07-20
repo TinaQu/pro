@@ -36,37 +36,45 @@ class DiscussionGroup(models.Model):
     GroupID = models.CharField(max_length=30)
     #MaxNum = models.IntegerField(max_length=3)
     #CreateUserId = models.IntegerField(max_length=20)
-    CreateUserId = models.ForeignKey(User,related_name='+')
+    CreateUserId = models.ForeignKey(UserProfile)
     Tag = models.CharField(max_length=100)
-    Member = models.ManyToManyField(User,related_name='+u+')
+
     #StudentMember = models.ManyToManyField(StudentProfile)
     #StaffMember = models.ManyToManyField(StaffProfile)
 
     def __unicode__(self):
         return self.GroupID
 
+
+
 class MessageDetails(models.Model):
-    GroupID = models.OneToOneField(DiscussionGroup)
-    PublishDate = models.DateTimeField()
-    PublisherUserID = models.ForeignKey(User)
+    GroupID = models.ForeignKey(DiscussionGroup)
+    PublishDate = models.DateTimeField(auto_now_add=True)
+    PublisherUserID = models.ForeignKey(UserProfile)
     #StaffUserID = models.ForeignKey(StaffProfile)
-   # Comment = models.CharField(max_length=250)
+    CommentMDF = models.CharField(max_length=250)
 
     def __unicode__(self):
         return self.GroupID.GroupID
 
 class Model(models.Model):
     ModelID = models.CharField(unique=True,max_length=30)
-    CreateStaff = models.ForeignKey(User, related_name='+')
+    CreateStaff = models.ForeignKey(UserProfile)
     Tag = models.CharField(max_length=100,null=True)
-    Member = models.ManyToManyField(User, related_name='s+')
 
     def __unicode__(self):
         return self.ModelID
 
+class ModelMember(models.Model):
+    ModelID= models.ForeignKey(Model)
+    Member = models.ForeignKey(User)
+
+    def __unicode__(self):
+        return self.ID
+
 class ActivityDetails(models.Model):
     ModelID = models.OneToOneField(Model)
-    PublishDate = models.DateTimeField()
+    PublishDate = models.DateTimeField(auto_now_add=True)
     Comment = models.CharField(max_length=250)
 
     @property
@@ -75,7 +83,7 @@ class ActivityDetails(models.Model):
 
 class AcceptRecord(models.Model):
     GroupID = models.ForeignKey(DiscussionGroup)
-    UserID = models.ForeignKey(User)
+    UserID = models.ForeignKey(UserProfile)
     isAccept = models.BooleanField(default=False)
     isRefuse = models.BooleanField(default=False)
 

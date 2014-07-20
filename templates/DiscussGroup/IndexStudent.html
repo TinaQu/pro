@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+
+{% block title %}{{ username }}{% endblock %}
+ <div><a href="addNewGroup/"><strong>Create Topic</strong></a></div>
+ <div><a href ="user_GroupListNow/"><strong>Owned Topic Group</strong></a></div>
+{% if DiscussionGroup1 %}
+{% for post in DiscussionGroup1 %}
+<form id="apply_form" enctype="multipart/form-data" method="post" action="/DiscussGroup/Login/apply">
+{% csrf_token %}
+            <div>
+              <h3><strong>No. {{ forloop.counter }}</strong></h3>
+              <div ><ul >
+                  <input type="text" id="GroupID" name="GroupID" class="form-control" value="{{post.GroupID}}" readonly/>
+                  <li>Tag:{{ post.Tag }}</li>
+                  <input type="submit" value="Apply"/>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+</form>
+{% endfor %}
+{% else %}
+            <strong>There are no Discussion Group present.</strong>
+            {% endif %}
+{% block body_block %}
+
+{% endblock %}
+
+</body>
+</html>
+

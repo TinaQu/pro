@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{% block title %}{{ username }}{% endblock %}
+<p>###############################################################################################</p>
+<h2>Owned Topic</h2>
+
+{% if result_list1 %}
+{% for post in result_list1 %}
+
+<a href="Management/{{ post.id}}">Manage Topic</a>
+            <div>
+              <h3><strong>No. {{ forloop.counter }}</strong></h3>
+              <div ><ul >
+                  <li><a href="ShowTopicmessage/{{ post.id}}"> Group name:{{ post.GroupID }}</a></li>
+                  <li>Tag:{{ post.Tag }}</li>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no Discussion Group present.</strong>
+            {% endif %}
+<p>###############################################################################################</p>
+<h2>Joined Topic</h2>>
+{% if result_list2 %}
+{% for post in result_list2 %}
+
+            <div>
+              <h3><strong>No. {{ forloop.counter }}</strong></h3>
+               <h4><strong><a href="Quit/{{ post.id }}">Quit</a> </strong></h4>
+              <div ><ul >
+                  <li><a href="ShowTopicmessage/{{ post.id}}">Group name:{{ post.GroupID }}</a></li>
+                  <li>Tag:{{ post.Tag }}</li>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no Discussion Group present.</strong>
+            {% endif %}
+
+
+{% block body_block %}
+
+{% endblock %}
+</body>
+</html>

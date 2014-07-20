@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{% block title %}{{ username }}{% endblock %}
+<p>###############################################################################################</p>
+<h2>Owned Topic</h2>
+
+{% if result_list1 %}
+{% for post in result_list1 %}
+<a href="ManagementModel/{{ post.id}}">Manage Model</a>
+            <div>
+              <h3><strong>No. {{ forloop.counter }}</strong></h3>
+              <div ><ul >
+                  <li><a href="ShowModelmessage/{{ post.id}}"> Model name:{{ post.ModelID }}</a></li>
+                  <li>Tag:{{ post.Tag }}</li>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no Discussion Group present.</strong>
+            {% endif %}
+<p>###############################################################################################</p>
+
+
+{% block body_block %}
+
+{% endblock %}
+</body>
+</html>

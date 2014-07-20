@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ {% if discussiongroup%}
+
+    <h4>Group Name: {{ discussiongroup.GroupID }}</h4>
+    {% endif %}
+<h2>Find History Messsage!</h2>
+       <input type="text" name="field1" id="field1" class="field1" onfocus='javascript: this.value = ""' onblur='javascript: if(this.value =="") this.value = "Enter Domain Name Here!"' />
+       <div>
+       <select  name="field2" id="field2"class="field2">
+                <option>Publisher ID</option>
+
+       </select>
+            </div>
+            <input type="submit" name="submit" value="" class="field3" />
+
+   {% if result_list%}
+
+     <h4>History Messsage</h4>
+     {% for post in DiscussionGroup1 %}
+         <ul>
+             <li>Publisher User :{{ post.PublisherUserID }}</li>
+             <li>Publish Date:{{ post.PublishDate }}</li>
+             <li>Comment:{{ post.CommentMDF }}</li>
+         </ul>
+{% endfor %}
+{% endif %}
+
+</body>
+</html>

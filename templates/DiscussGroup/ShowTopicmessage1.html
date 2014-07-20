@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p>####################################################################################</p>
+{% block title %}{{ username }}{% endblock %}
+{% if result_list2 %}
+{% for post in result_list2 %}
+
+            <div>
+    <input type="text" id="GroupID" name="GroupID" class="form-control" value="{{post.GroupID}}" readonly/>
+            <h2><strong>Discussion Group name:{{ post.GroupID }}</strong></h2>
+            <h3><strong>Discussion Group Creator</strong></h3>
+              <div ><ul >
+                  <li>Creator name:{{ post.CreateUserId }}</li>
+
+
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no Discussion Group Creator.</strong>
+            {% endif %}
+<p>#####################################################################################</p>
+{% if result_list3 %}
+{% for post in result_list3 %}
+
+            <div><ul>
+                  <h3><strong>Group Member</strong></h3>
+                  <li>{{ post.UserID }}</li>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no other member in this Group.</strong>
+            {% endif %}
+<p>##########################################################################################</p>
+<h5><a href="/DiscussGroup/Login/user_GroupListNow/HistoryMessasge/{{ post.id}}">View History data</a></h5>
+{% if result_list2 %}
+{% for post in result_list2 %}
+
+<form  id="page_form" method="post" action="{{ post.id}}" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+            {% endfor %}
+
+            {% for field in form.visible_fields %}
+            {{ field.errors }}
+            {{ field.help_text }}<br/>
+            {{ field }}<br>
+            {% endfor %}
+
+            <br/>
+            <button type="submit" name="submit">Add</button>
+        </form>
+{% endfor %}
+{% endif %}
+<p>#####################################################33</p>
+
+
+{% block body_block %}
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ {% if DiscussionGroup2%}
+
+    <h4>Group Name: {{ DiscussionGroup2.GroupID }}</h4>
+    {% endif %}
+    <p><strong>Request</strong></p>
+    {% if AcceptRecord3%}
+            {% for applyRecord in AcceptRecord3 %}
+            <div>
+                <h2>{{applyRecord.UserID.user.username }} </h2>>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="/DiscussGroup/Login/offer/{{ applyRecord.id}}">Offer</a>/<a href="/dragon/Login/refuse/{{ applyRecord.id}}">Refuse</a>
+
+                  <!--plan-->
+            </div>
+            {% endfor %}
+            {% endif %}
+
+</body>
+</html>

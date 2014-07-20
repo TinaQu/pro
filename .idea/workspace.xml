@@ -30,59 +30,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pro/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="62" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.0" vertical-offset="2556" max-vertical-offset="3268">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DiscussGroup/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="15" selection-start="1212" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1292">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/DiscussionGroup/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="7" selection-start="533" selection-end="533" vertical-scroll-proportion="-10.464286" vertical-offset="163" max-vertical-offset="589">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DiscussGroup/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="313" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="1121" max-vertical-offset="5358">
+            <state line="565" column="47" selection-start="22446" selection-end="22446" vertical-scroll-proportion="0.40809968" vertical-offset="10473" max-vertical-offset="11305">
+              <folding>
+                <element signature="e#0#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dealQuit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/dealQuit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="29" selection-start="370" selection-end="370" vertical-scroll-proportion="-7.464286" vertical-offset="57" max-vertical-offset="475">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SuccessfulQuit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/SuccessfulQuit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="53" selection-start="169" selection-end="169" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="304">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryMessage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/HistoryMessage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="741">
+              <folding>
+                <marker date="1405858956014" expanded="true" signature="21:949" placeholder="..." />
+                <marker date="1405858956014" expanded="true" signature="28:56" placeholder="..." />
+                <marker date="1405858956014" expanded="true" signature="63:941" placeholder="..." />
+                <marker date="1405858956014" expanded="true" signature="393:533" placeholder="..." />
+                <marker date="1405858956014" expanded="true" signature="450:514" placeholder="..." />
+                <marker date="1405858956014" expanded="true" signature="717:907" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dealGroupApply.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/dealGroupApply.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="17" selection-start="0" selection-end="647" vertical-scroll-proportion="-9.857142" vertical-offset="85" max-vertical-offset="551">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="7" selection-start="2603" selection-end="2609" vertical-scroll-proportion="0.0" vertical-offset="1349" max-vertical-offset="1824">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="IndexStudent.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/DiscussionGroup/IndexStudent.html">
+        <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/IndexStudent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="-9.107142" vertical-offset="87" max-vertical-offset="513">
-              <folding>
-                <marker date="1404661755214" expanded="true" signature="162:455" placeholder="..." />
-                <marker date="1404661755214" expanded="true" signature="248:408" placeholder="..." />
-                <marker date="1404661755214" expanded="true" signature="253:387" placeholder="..." />
-              </folding>
+            <state line="21" column="39" selection-start="699" selection-end="717" vertical-scroll-proportion="3.0357144" vertical-offset="484" max-vertical-offset="874">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pro/urls.py">
+      <file leaf-file-name="ShowTopicmessage1.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/ShowTopicmessage1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="922" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="798">
+            <state line="45" column="27" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-6.107143" vertical-offset="684" max-vertical-offset="1539">
               <folding />
             </state>
           </provider>
@@ -91,27 +114,16 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DiscussGroup/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log_in.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/DiscussionGroup/log_in.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="88" selection-start="1460" selection-end="1460" vertical-scroll-proportion="5.821429" vertical-offset="1208" max-vertical-offset="1634">
+            <state line="11" column="36" selection-start="476" selection-end="500" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
+      <file leaf-file-name="user_GroupListNow.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/user_GroupListNow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="26" selection-start="2154" selection-end="2181" vertical-scroll-proportion="0.28854626" vertical-offset="1047" max-vertical-offset="1672">
+            <state line="35" column="60" selection-start="1127" selection-end="1127" vertical-scroll-proportion="-3.392857" vertical-offset="570" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -130,16 +142,40 @@
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/pro/wsgi.py" />
         <option value="$PROJECT_DIR$/DiscussGroup/admi.py" />
-        <option value="$PROJECT_DIR$/pro/settings.py" />
-        <option value="$PROJECT_DIR$/pro/urls.py" />
-        <option value="$PROJECT_DIR$/DiscussGroup/admin.py" />
-        <option value="$PROJECT_DIR$/DiscussGroup/models.py" />
         <option value="$PROJECT_DIR$/templates/DiscussionGroup/base.html" />
         <option value="$PROJECT_DIR$/templates/DiscussionGroup/IndexStudent.html" />
         <option value="$PROJECT_DIR$/templates/DiscussionGroup/log_in.html" />
+        <option value="$PROJECT_DIR$/pro/urls.py" />
+        <option value="$PROJECT_DIR$/templates/SuccessfulApply.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/SuccessfulApply.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/ErrorApply.html" />
+        <option value="$PROJECT_DIR$/DiscussGroup/admin.py" />
+        <option value="C:/Python27/Lib/site-packages/django/conf/urls/__init__.py" />
+        <option value="$PROJECT_DIR$/pro/settings.py" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/SuccessfulMessage2.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/addNewGroup.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/SuccessfulAccept.html" />
+        <option value="$USER_HOME$/.PyCharm30/system/python_stubs/-762174762/__builtin__.py" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/ShowTopicmessage.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/GroupCharting.html" />
+        <option value="$PROJECT_DIR$/templates/ShowTopicmessage1.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/SuccessfulMessage.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/addNewModel.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/IndexStaff.html" />
         <option value="$PROJECT_DIR$/DiscussGroup/forms.py" />
-        <option value="$PROJECT_DIR$/DiscussGroup/views.py" />
+        <option value="$PROJECT_DIR$/DiscussGroup/models.py" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/SuccessfulMessage3.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/ModelNow.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/search.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/IndexStudent.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/HistoryMessage.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/ShowTopicmessage1.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/user_GroupListNow.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/SuccessfulQuit.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/dealGroupApply.html" />
+        <option value="$PROJECT_DIR$/templates/DiscussGroup/dealQuit.html" />
         <option value="$PROJECT_DIR$/DiscussGroup/urls.py" />
+        <option value="$PROJECT_DIR$/DiscussGroup/views.py" />
       </list>
     </option>
   </component>
@@ -148,6 +184,25 @@
     <option name="y" value="-8" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Django</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>DjangoCloseTagInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -175,7 +230,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,7 +262,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DiscussionGroup" />
+              <option name="myItemId" value="DiscussGroup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -242,12 +310,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistory" value="django.contrib.admin" />
+    <property name="SearchEverywhereHistory" value="&#10;django.contrib.admin" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -264,6 +333,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FYP2\project\Code.6\pro\templates\DiscussGroup" />
+      <recent name="D:\FYP2\project\Code\pro\templates\DiscussGroup" />
       <recent name="D:\FYP2\project\Code\pro\templates\DiscussionGroup" />
     </key>
   </component>
@@ -390,27 +461,7 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pro" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -436,7 +487,27 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -571,35 +642,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43156424" sideWeight="0.65917844" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4301676" sideWeight="0.65917844" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22207959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22336328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3980447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34776536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43156424" sideWeight="0.65917844" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43156424" sideWeight="0.65917844" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -607,10 +678,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2195122" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23234917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -632,136 +703,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="304" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3268">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="33" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="361" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="55" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1482" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="304" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3268">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="266" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="55" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1406" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="304" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="289" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1326" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="60" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="1309" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="272" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="1" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1292" />
@@ -855,77 +796,220 @@
         <state line="9" column="7" selection-start="213" selection-end="213" vertical-scroll-proportion="0.22060958" vertical-offset="0" max-vertical-offset="689" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pro/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="28" selection-start="877" selection-end="877" vertical-scroll-proportion="0.5393519" vertical-offset="280" max-vertical-offset="798" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DiscussGroup/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="475" selection-end="475" vertical-scroll-proportion="0.35849056" vertical-offset="0" max-vertical-offset="689" />
+        <state line="7" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="34" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.33333334" vertical-offset="711" max-vertical-offset="1216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pro/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="62" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.0" vertical-offset="2556" max-vertical-offset="3268">
+        <state line="120" column="0" selection-start="4154" selection-end="4154" vertical-scroll-proportion="0.0" vertical-offset="2096" max-vertical-offset="3287">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/DiscussionGroup/log_in.html">
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/log_in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="88" selection-start="1460" selection-end="1460" vertical-scroll-proportion="5.821429" vertical-offset="1208" max-vertical-offset="1634">
+        <state line="14" column="29" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="1634" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-762174762/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3394" column="32" selection-start="116551" selection-end="116551" vertical-scroll-proportion="0.41558442" vertical-offset="64294" max-vertical-offset="96881" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="0" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.33333334" vertical-offset="1746" max-vertical-offset="5092" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="0" selection-start="7143" selection-end="7143" vertical-scroll-proportion="0.0" vertical-offset="3081" max-vertical-offset="3762" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="3221" selection-end="3221" vertical-scroll-proportion="0.33333334" vertical-offset="1803" max-vertical-offset="3477" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/SuccessfulAccept.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="361" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/ErrorApply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="220" selection-end="220" vertical-scroll-proportion="0.437788" vertical-offset="0" max-vertical-offset="434" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/SuccessfulApply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="83" selection-start="77" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/ShowTopicmessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="0" selection-end="1971" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1444">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/DiscussionGroup/IndexStudent.html">
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/GroupCharting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="-9.107142" vertical-offset="87" max-vertical-offset="513">
-          <folding>
-            <marker date="1404661755214" expanded="true" signature="162:455" placeholder="..." />
-            <marker date="1404661755214" expanded="true" signature="248:408" placeholder="..." />
-            <marker date="1404661755214" expanded="true" signature="253:387" placeholder="..." />
-          </folding>
-        </state>
+        <state line="17" column="16" selection-start="67" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="627" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/DiscussionGroup/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/addNewModel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="533" selection-end="533" vertical-scroll-proportion="-10.464286" vertical-offset="163" max-vertical-offset="589">
-          <folding />
-        </state>
+        <state line="8" column="72" selection-start="134" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="589" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DiscussGroup/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="15" selection-start="1212" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1292">
+        <state line="43" column="85" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1444" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/IndexStaff.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="348" selection-end="356" vertical-scroll-proportion="0.0485133" vertical-offset="216" max-vertical-offset="855">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/addNewGroup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="313" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="1121" max-vertical-offset="5358">
+        <state line="6" column="22" selection-start="87" selection-end="87" vertical-scroll-proportion="0.17840375" vertical-offset="0" max-vertical-offset="639" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667">
+          <folding>
+            <marker date="1405856740448" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405856740448" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405856740448" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/SuccessfulMessage2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="268" selection-end="268" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/SuccessfulMessage3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="922" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="798">
+        <state line="10" column="7" selection-start="183" selection-end="183" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="304" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/ModelNow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="68" selection-start="523" selection-end="523" vertical-scroll-proportion="0.41538462" vertical-offset="142" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/SuccessfulMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="1" selection-start="65" selection-end="169" vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/user_GroupListNow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="60" selection-start="1127" selection-end="1127" vertical-scroll-proportion="-3.392857" vertical-offset="570" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/dealGroupApply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="17" selection-start="0" selection-end="647" vertical-scroll-proportion="-9.857142" vertical-offset="85" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/SuccessfulQuit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="53" selection-start="169" selection-end="169" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/dealQuit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="370" selection-end="370" vertical-scroll-proportion="-7.464286" vertical-offset="57" max-vertical-offset="475">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/HistoryMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="741">
+          <folding>
+            <marker date="1405858956014" expanded="true" signature="21:949" placeholder="..." />
+            <marker date="1405858956014" expanded="true" signature="28:56" placeholder="..." />
+            <marker date="1405858956014" expanded="true" signature="63:941" placeholder="..." />
+            <marker date="1405858956014" expanded="true" signature="393:533" placeholder="..." />
+            <marker date="1405858956014" expanded="true" signature="450:514" placeholder="..." />
+            <marker date="1405858956014" expanded="true" signature="717:907" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/ShowTopicmessage1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="27" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-6.107143" vertical-offset="684" max-vertical-offset="1539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="7" selection-start="2603" selection-end="2609" vertical-scroll-proportion="0.0" vertical-offset="1349" max-vertical-offset="1824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DiscussGroup/IndexStudent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="39" selection-start="699" selection-end="717" vertical-scroll-proportion="3.0357144" vertical-offset="484" max-vertical-offset="874">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DiscussGroup/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state line="11" column="36" selection-start="476" selection-end="500" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="570">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DiscussGroup/models.py">
+    <entry file="file://$PROJECT_DIR$/DiscussGroup/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="26" selection-start="2154" selection-end="2181" vertical-scroll-proportion="0.28854626" vertical-offset="1047" max-vertical-offset="1672">
-          <folding />
+        <state line="565" column="47" selection-start="22446" selection-end="22446" vertical-scroll-proportion="0.40809968" vertical-offset="10473" max-vertical-offset="11305">
+          <folding>
+            <element signature="e#0#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

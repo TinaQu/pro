@@ -73,11 +73,11 @@ class ModelMember(models.Model):
         return self.ID
 
 class ActivityDetails(models.Model):
-    ModelID = models.OneToOneField(Model)
+    ModelID = models.ForeignKey(Model)
     PublishDate = models.DateTimeField(auto_now_add=True)
-    Comment = models.CharField(max_length=250)
+    CommentAD = models.CharField(max_length=250)
 
-    @property
+
     def __unicode__(self):
         return self.ModelID.ModelID
 

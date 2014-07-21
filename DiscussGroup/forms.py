@@ -54,7 +54,7 @@ class ModelMemberForm(forms.ModelForm):
         fields = ('ModelID','Member')
 
 
-class ActivityDetails(forms.ModelForm):
+class ActivityDetailsform(forms.ModelForm):
     CommentAD = forms.CharField(max_length=250)
 
     class Meta:

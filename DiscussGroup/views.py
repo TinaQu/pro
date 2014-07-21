@@ -1,7 +1,7 @@
 from DiscussGroup.models import UserProfile,DiscussionGroup,MessageDetails,Model,ActivityDetails,AcceptRecord,User
 from django.template import RequestContext
 from django.shortcuts import render_to_response
-from DiscussGroup.forms import UserForm, UserProfileForm,DiscussionGroupForm,ModelForm,ActivityDetails,\
+from DiscussGroup.forms import UserForm, UserProfileForm,DiscussionGroupForm,ModelForm,ActivityDetailsform,\
     AcceptRecordForm,MessageDetailsForm
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse,Http404
@@ -98,6 +98,7 @@ def IndexStudent(request):
                             DiscussionGroup1.remove(discussiongroup1)
     except User.DoesNotExist:
         pass
+
     # Return a rendered response to send to the client.
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
@@ -223,6 +224,7 @@ def user_GroupListNow(request):
 def ModelNow(request):
     context = RequestContext(request)
     username1 = request.user.username
+    result_list2=[]
 
     result_list1=[]
 
@@ -231,10 +233,48 @@ def ModelNow(request):
         user1= User.objects.get(username=username1)
         userProfile = UserProfile.objects.get(user=user1)
         result_list1= Model.objects.filter(CreateStaff=userProfile)
+        result_list2= ActivityDetails.objects.filter(ModelID=result_list1)
 
+        #####################################
     except User.DoesNotExist:
         pass
-    return render_to_response('DiscussGroup/ModelNow.html',{'result_list1': result_list1},context)
+    return render_to_response('DiscussGroup/ModelNow.html',{'result_list1': result_list1,'result_list2': result_list2},context)
+
+####################################################################################################################
+def AddModelActivity(request,offset):
+    context=RequestContext(request)
+    model=[]
+    try:
+         offset=int(offset)
+    except ValueError:
+          raise Http404()
+
+    username1 = request.user.username
+    user1= User.objects.get(username =username1)
+    userProfile = UserProfile.objects.get(user=user1)
+
+    if request.method=='POST':
+        form=ActivityDetailsform(request.POST)
+
+        if form.is_valid():
+
+           ActivityDetails=form.save(commit=False)
+
+           try:
+                    model= Model.objects.filter(id=offset)
+                    for model1 in model:
+                        ActivityDetails.ModelID=model1
+
+                        ActivityDetails.save()
+           except User.DoesNotExist:
+               return AddModelActivity(request)
+
+
+
+           return render_to_response('DiscussGroup/SuccessfulMessage2.html',{}, context)
+
+
+
 
 ####################################################################################################################
 
@@ -260,6 +300,29 @@ def dealGroupApply(request,offset):
                                                               'AcceptRecord3': AcceptRecord3,
                                                               'DiscussionGroup2': DiscussionGroup2},context)
 ####################################################################################################################################3
+def ShutDownGroup(request,offset):
+     context = RequestContext(request)
+     username1 = request.user.username
+     user1= User.objects.get(username =username1)
+     userProfile = UserProfile.objects.get(user=user1)
+     acceptRecord1=[]
+     try:
+          offset=int(offset)
+     except ValueError:
+          raise Http404()
+     try:
+         acceptRecord1=AcceptRecord.objects.get(id=offset)
+         AcceptRecord.objects.filter(id=offset,isRefuse=False).delete()
+         DiscussionGroup.objects.filter(id=offset,CreateUserId=userProfile).delete()
+
+
+     except AcceptRecord.DoesNotExist:
+      pass
+
+      #return HttpResponseRedirect('/DiscussGroup/Login/user_GroupListNow')
+     # return render_to_response('DiscussGroup/SuccessfulAccept.html',{'applyRecord': acceptRecord1},context)
+      return render_to_response('DiscussGroup/SuccessfulQuit.html',{},context)
+##################################################################################################################################
 def acceptApply(request,offset):
       context = RequestContext(request)
       acceptRecord1=[]
@@ -391,13 +454,12 @@ def AddGroupCharting(request):
 
 ####################################################################################################################
 
-def ShowTopicmessage(request,offset):
+def ShowModelmessage(request,offset):
     context = RequestContext(request)
     username1 = request.user.username
 
     result_list1=[]
     result_list2=[]
-    result_list3=[]
     try:
           offset=int(offset)
     except ValueError:
@@ -406,20 +468,16 @@ def ShowTopicmessage(request,offset):
     try:
         user1= User.objects.get(username =username1)
         userProfile = UserProfile.objects.get(user=user1)
-        result_list2= DiscussionGroup.objects.filter(id=offset)
-        result_list1= MessageDetails.objects.filter(GroupID=result_list2)
-        result_list3=AcceptRecord.objects.filter(isAccept=True,isRefuse=False,GroupID=result_list2)
-
-
-
+        result_list2= Model.objects.filter(id=offset)
+#        result_list1= ActivityDetails.objects.filter(ModelID=result_list2)
 
     except User.DoesNotExist:
      pass
 
 
     return render_to_response('DiscussGroup/ShowTopicmessage.html',{'result_list1': result_list1,
-                                                                     'result_list2':result_list2,
-                                                                     'result_list3':result_list3
+                                                                     'result_list2':result_list2
+
                                                                       },context)
 
 ##########################################################################################################################3
@@ -575,6 +633,9 @@ def dealQuit(request,offset):
 ######################################################################################################################3#
 def quit(request,offset):
      context = RequestContext(request)
+     username1 = request.user.username
+     user1= User.objects.get(username =username1)
+     userProfile = UserProfile.objects.get(user=user1)
      acceptRecord1=[]
      try:
           offset=int(offset)
@@ -582,9 +643,11 @@ def quit(request,offset):
           raise Http404()
      try:
          acceptRecord1=AcceptRecord.objects.get(id=offset)
-         AcceptRecord.objects.filter(id=offset,isRefuse=False).update(isAccept=False)
+         AcceptRecord.objects.filter(id=offset,isRefuse=False,UserID=userProfile).delete()
      except AcceptRecord.DoesNotExist:
       pass
 
-      return render_to_response('DiscussGroup/SuccessfulQuit.html',{'applyRecord': acceptRecord1},context_instance = RequestContext(request))
+      #return HttpResponseRedirect('/DiscussGroup/Login/user_GroupListNow')
+     # return render_to_response('DiscussGroup/SuccessfulAccept.html',{'applyRecord': acceptRecord1},context)
+      return render_to_response('DiscussGroup/SuccessfulQuit.html',{},context)
 ########################################################################################################################3

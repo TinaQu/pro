@@ -12,6 +12,7 @@
 {% for post in result_list1 %}
 
 <a href="Management/{{ post.id}}">Manage Topic</a>
+    <strong><a href="Delete/{{ post.id }}">Delete</a> </strong>
             <div>
               <h3><strong>No. {{ forloop.counter }}</strong></h3>
               <div ><ul >

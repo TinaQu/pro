@@ -6,15 +6,15 @@
 <body>
 {% block title %}{{ username }}{% endblock %}
 <p>###############################################################################################</p>
-<h2>Owned Topic</h2>
+<h2>Owned Model</h2>
 
 {% if result_list1 %}
 {% for post in result_list1 %}
-<a href="ManagementModel/{{ post.id}}">Manage Model</a>
+<a href="AddActivity/{{ post.id}}">Add new Activity</a>
             <div>
               <h3><strong>No. {{ forloop.counter }}</strong></h3>
               <div ><ul >
-                  <li><a href="ShowModelmessage/{{ post.id}}"> Model name:{{ post.ModelID }}</a></li>
+                  <li> Model name:{{ post.ModelID }}</a></li>
                   <li>Tag:{{ post.Tag }}</li>
               </ul>
               </div>
@@ -23,9 +23,25 @@
              </div>
 {% endfor %}
 {% else %}
-            <strong>There are no Discussion Group present.</strong>
+            <strong>There are no Model present.</strong>
             {% endif %}
 <p>###############################################################################################</p>
+{% if result_list2 %}
+{% for post in result_list2 %}
+            <div>
+              <h3><strong>No. {{ forloop.counter }}</strong></h3>
+              <div ><ul >
+                  <li>Publish Date:{{ post.PublishDate }}</li>
+                  <li>{{ post.CommentAD }}</li>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no Activity present.</strong>
+            {% endif %}
 
 
 {% block body_block %}

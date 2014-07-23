@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ {% if result_list%}
+
+     <h4>Search Result</h4>
+     {% for post in result_list %}
+         <ul>
+             <li>Publisher User :{{ post.PublisherUserID }}</li>
+             <li>Publish Date:{{ post.PublishDate }}</li>
+             <li>Comment:{{ post.CommentMDF }}</li>
+         </ul>
+{% endfor %}
+ {% else %}
+      <strong>There are no result present.</strong>
+{% endif %}
+
+</body>
+</html>

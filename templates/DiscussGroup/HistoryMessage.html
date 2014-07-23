@@ -8,27 +8,23 @@
 
     <h4>Group Name: {{ discussiongroup.GroupID }}</h4>
     {% endif %}
-<h2>Find History Messsage!</h2>
-       <input type="text" name="field1" id="field1" class="field1" onfocus='javascript: this.value = ""' onblur='javascript: if(this.value =="") this.value = "Enter Domain Name Here!"' />
-       <div>
-       <select  name="field2" id="field2"class="field2">
-                <option>Publisher ID</option>
-
-       </select>
-            </div>
-            <input type="submit" name="submit" value="" class="field3" />
 
    {% if result_list%}
 
      <h4>History Messsage</h4>
-     {% for post in DiscussionGroup1 %}
+     {% for post in result_list %}
+          <input type="text" id="GroupID" name="GroupID" class="form-control" value="{{post.GroupID}}" readonly/>
          <ul>
              <li>Publisher User :{{ post.PublisherUserID }}</li>
              <li>Publish Date:{{ post.PublishDate }}</li>
              <li>Comment:{{ post.CommentMDF }}</li>
          </ul>
 {% endfor %}
+ {% else %}
+      <strong>There are no History Message present.</strong>
 {% endif %}
+<a href="/DiscussGroup/Login/user_GroupListNow">Return</a>
+
 
 </body>
 </html>

@@ -6,6 +6,8 @@
 <body>
 <p>####################################################################################</p>
 {% block title %}{{ username }}{% endblock %}
+
+<p>##############################################################################################</p>
 {% if result_list2 %}
 {% for post in result_list2 %}
 
@@ -43,10 +45,26 @@
             <strong>There are no other member in this Group.</strong>
             {% endif %}
 <p>##########################################################################################</p>
-<h5><a href="/DiscussGroup/Login/user_GroupListNow/HistoryMessasge/{{ post.id}}">View History data</a></h5>
+
 {% if result_list2 %}
 {% for post in result_list2 %}
+<form class="form-signin span8" id="search_form" method="post" action="/DiscussGroup/Login/user_GroupListNow/search/{{ post.pk}}">
+{% endfor %}
+      {% csrf_token %}
+       <input type="text" name="field1" id="field1" class="field1" onfocus='javascript: this.value = ""' onblur='javascript: if(this.value =="") this.value = "Enter Domain Name Here!"' />
+       <div>
+       <select  name="field2" id="field2"class="field2">
+                <option>PublisherID</option>
 
+       </select>
+            </div>
+            <input type="submit" name="submit" value="Search" class="field3" />
+    </form>
+{% for post in result_list2 %}
+<h5><a href="/DiscussGroup/Login/user_GroupListNow/HistoryMessasge/{{ post.id}}">View History data</a></h5>
+{% endfor %}
+
+<p>#########################################################################################################3</p>
 <form  id="page_form" method="post" action="{{ post.id}}" enctype="multipart/form-data">
 
             {% csrf_token %}
@@ -63,7 +81,7 @@
             <br/>
             <button type="submit" name="submit">Add</button>
         </form>
-{% endfor %}
+
 {% endif %}
 <p>#####################################################33</p>
 

@@ -57,9 +57,8 @@ margin:0 auto;}
 	margin-left: 10px;
 	margin-top: 20px;
 }
-
 </style>
-    <title>Successful Apply</title>
+    <title>Index</title>
 
 </head>
 <body class="body">
@@ -67,6 +66,16 @@ margin:0 auto;}
 <div class="whole">
 <div class="left">
 <div class="indexlist">
+{% if userProfile %}
+    {% for user1 in userProfile %}
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Welcome! {{ user1.user }}</h3>
+
+<ul>
+{% if user1.isAdministrator %}
+<li><a href="/admin"><strong>Manage Database</strong></a></li>
+
+{% endif %}
+{% if user1.isAdministrator or user1.isStaff or user1.isStudent %}
 <li>
 Topic
 <dl>
@@ -75,6 +84,8 @@ Topic
 <dd><a href ="/DiscussGroup/Login/user_GroupListNow/"><strong>Owned Topic Group</strong></a></dd>
 </dl>
 </li>
+{% endif %}
+{% if user1.isAdministrator or user1.isStaff %}
 <li>
 Model
 <dl>
@@ -82,17 +93,49 @@ Model
 <dd><a href="/DiscussGroup/Login/addNewModel/"><strong>Create Model</strong></a></dd>
 <dd><a href="/DiscussGroup/Login/ModelNow"><strong>Owned Model</strong></a></dd>
 </dl>
-</li><br/>
-<h5 align="center"><a href="/DiscussGroup/Login/ReturnIndex">Return to Index</a></h5>
+</li>
+{% endif %}
+</ul>
+{% endfor %}
+{% endif %}
+<p><a href="">Log out</a></p>
 </div>
 </div>
 <div class="right">
-<div class="form">
+{% if DiscussionGroup1 %}
+{% for post in DiscussionGroup1 %}
+<form id="apply_form" enctype="multipart/form-data" method="post" action="/DiscussGroup/Login/apply">
+{% csrf_token %}
 <div>
-    <h4><strong>Add Activity Successful!</strong></h4><br/>
-    <a href="/DiscussGroup/Login/ModelNow/">Return</a>
-</div>
-</div>
+<h4 align="justify"><strong>&nbsp;&nbsp;&nbsp;&nbsp;No. {{ forloop.counter }}</strong></h4>
+
+ <table class="AvailableList">
+<tr>
+<td  class="AvailableListLeft"><input type="text" id="GroupID" name="GroupID" class="form-control" value="{{post.GroupID}}" readonly/></td>
+<td  class="AvailableListRight">Owner: {{post.CreateUserId}}</td>
+
+</tr>
+<tr>
+<td>Tag:{{ post.Tag }}
+</td>
+<td>
+<input type="submit" value="Apply"/>
+</td>
+</tr>
+</table>
+
+
+
+              <!--plan-->
+ </div>
+</form>
+{% endfor %}
+{% else %}
+            <strong>There are no Discussion Group present.</strong>
+            {% endif %}
+{% block body_block %}
+
+{% endblock %}
 </div>
 </div>
 </body>

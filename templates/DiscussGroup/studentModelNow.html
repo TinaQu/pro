@@ -22,6 +22,7 @@
 	border-right:#000000 thin dotted;
 	border-top:#000000 thin dotted;
 }
+
 .left{
 	background-color:#FFFFFF;
 	width: 30%;
@@ -38,10 +39,27 @@
 	background-color:#FFFFFF;
 	width: 69%;
 	float: right;
-;
     min-height:600px;
 
 }
+.right1{
+	background-color:#f5f5f5;
+	width: 69%;
+	float: right;
+    min-height:600px;
+
+}
+.rightleft{
+    background-color:#FFFFFF;
+	width: 50%;
+	min-height:600px;
+	float: left;
+}
+.rightright{
+background-color:#FFFFFF;
+float:right;
+width:49%;
+min-height:600px;}
 .AvailableList{
 width: 80%;
 margin:0 auto;}
@@ -59,7 +77,7 @@ margin:0 auto;}
 }
 
 </style>
-    <title>Successful Apply</title>
+    <title>Model List</title>
 
 </head>
 <body class="body">
@@ -75,22 +93,63 @@ Topic
 <dd><a href ="/DiscussGroup/Login/user_GroupListNow/"><strong>Owned Topic Group</strong></a></dd>
 </dl>
 </li>
-<li>
-Model
-<dl>
-<dt></dt>
-<dd><a href="/DiscussGroup/Login/addNewModel/"><strong>Create Model</strong></a></dd>
-<dd><a href="/DiscussGroup/Login/ModelNow"><strong>Owned Model</strong></a></dd>
-</dl>
-</li><br/>
+
 <h5 align="center"><a href="/DiscussGroup/Login/ReturnIndex">Return to Index</a></h5>
 </div>
 </div>
-<div class="right">
+<div class="right1">
+
+<div class="rightleft">
+    <div class="form">
+{% block title %}{{ username }}{% endblock %}
+<h2>Joined Model</h2>
+
+{% if result_list1 %}
+{% for post in result_list1 %}
+
+            <div>
+              <h3><strong>No. {{ forloop.counter }}</strong></h3>
+              <div ><ul >
+                  <li>Model Owner:{{ post.CreateStaff }}</li>
+                  <li> Model name:{{ post.ModelID }}</li>
+                  <li>Tag:{{ post.Tag }}</li>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no Model present.</strong>
+            {% endif %}
+			</div>
+</div>
+
+<div class="rightright">
 <div class="form">
-<div>
-    <h4><strong>Add Activity Successful!</strong></h4><br/>
-    <a href="/DiscussGroup/Login/ModelNow/">Return</a>
+<h2>Model Activities</h2>
+{% if result_list2 %}
+{% for post in result_list2 %}
+            <div>
+              <h3><strong>No. {{ forloop.counter }}</strong></h3>
+              <div ><ul >
+                  <li>Model ID :{{ post.ModelID }}</li>
+                  <li>Publish Date:{{ post.PublishDate }}</li>
+                  <li>{{ post.CommentAD }}</li>
+              </ul>
+              </div>
+
+              <!--plan-->
+             </div>
+{% endfor %}
+{% else %}
+            <strong>There are no Activity present.</strong>
+            {% endif %}
+
+
+{% block body_block %}
+
+{% endblock %}
 </div>
 </div>
 </div>

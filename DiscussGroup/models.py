@@ -33,7 +33,7 @@ class UserProfile(models.Model):
  #       return self.user.username
 
 class DiscussionGroup(models.Model):
-    GroupID = models.CharField(max_length=30)
+    GroupID = models.CharField(unique=True,max_length=30)
     #MaxNum = models.IntegerField(max_length=3)
     #CreateUserId = models.IntegerField(max_length=20)
     CreateUserId = models.ForeignKey(UserProfile)
@@ -67,10 +67,10 @@ class Model(models.Model):
 
 class ModelMember(models.Model):
     ModelID= models.ForeignKey(Model)
-    Member = models.ForeignKey(User)
+    Member = models.ForeignKey(UserProfile)
 
     def __unicode__(self):
-        return self.ID
+        return self.ModelID.ModelID
 
 class ActivityDetails(models.Model):
     ModelID = models.ForeignKey(Model)

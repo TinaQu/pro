@@ -33,7 +33,7 @@ class DiscussionGroupForm(forms.ModelForm):
 
 
 class MessageDetailsForm(forms.ModelForm):
-    CommentMDF = forms.CharField(max_length=250,help_text='The max length is 250')
+    CommentMDF = forms.CharField(max_length=250,help_text='The max length is 250',widget=forms.Textarea)
 
     class Meta:
         model = MessageDetails
@@ -55,7 +55,7 @@ class ModelMemberForm(forms.ModelForm):
 
 
 class ActivityDetailsform(forms.ModelForm):
-    CommentAD = forms.CharField(max_length=250)
+    CommentAD = forms.CharField(max_length=250,help_text='Please add new activity',widget=forms.Textarea )
 
     class Meta:
         model = ActivityDetails

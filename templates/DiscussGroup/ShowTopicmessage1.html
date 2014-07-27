@@ -80,6 +80,7 @@ margin:0 auto;}
     <title>Group Details</title>
 
 </head>
+<<<<<<< HEAD
 <body class="body">
 
 <div class="whole">
@@ -134,6 +135,13 @@ margin:0 auto;}
 
 <div class="rightright">
 <div class="form">
+=======
+<body>
+<p>####################################################################################</p>
+{% block title %}{{ username }}{% endblock %}
+
+<p>##############################################################################################</p>
+>>>>>>> 97bad6ee39054c2f8026e2d09af2703481ce9a83
 {% if result_list2 %}
 {% for post in result_list2 %}
 
@@ -171,6 +179,49 @@ margin:0 auto;}
 {% else %}
             <strong>There are no other member in this Group.</strong>
             {% endif %}
+<<<<<<< HEAD
+=======
+<p>##########################################################################################</p>
+
+{% if result_list2 %}
+{% for post in result_list2 %}
+<form class="form-signin span8" id="search_form" method="post" action="/DiscussGroup/Login/user_GroupListNow/search/{{ post.pk}}">
+{% endfor %}
+      {% csrf_token %}
+       <input type="text" name="field1" id="field1" class="field1" onfocus='javascript: this.value = ""' onblur='javascript: if(this.value =="") this.value = "Enter Domain Name Here!"' />
+       <div>
+       <select  name="field2" id="field2"class="field2">
+                <option>PublisherID</option>
+
+       </select>
+            </div>
+            <input type="submit" name="submit" value="Search" class="field3" />
+    </form>
+{% for post in result_list2 %}
+<h5><a href="/DiscussGroup/Login/user_GroupListNow/HistoryMessasge/{{ post.id}}">View History data</a></h5>
+{% endfor %}
+
+<p>#########################################################################################################3</p>
+<form  id="page_form" method="post" action="{{ post.id}}" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+            {% endfor %}
+
+            {% for field in form.visible_fields %}
+            {{ field.errors }}
+            {{ field.help_text }}<br/>
+            {{ field }}<br>
+            {% endfor %}
+
+            <br/>
+            <button type="submit" name="submit">Add</button>
+        </form>
+
+{% endif %}
+<p>#####################################################33</p>
+>>>>>>> 97bad6ee39054c2f8026e2d09af2703481ce9a83
 
 
 {% block body_block %}

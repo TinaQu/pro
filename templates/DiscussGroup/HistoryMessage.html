@@ -84,7 +84,11 @@ margin:0 auto;}
 
      <h4>History Messsage</h4>
      {% for post in result_list %}
+<<<<<<< HEAD
           <input type="text" id="GroupID" name="GroupID" class="form-control" value="{{post.GroupID}}" style="display:none;"/>
+=======
+          <input type="text" id="GroupID" name="GroupID" class="form-control" value="{{post.GroupID}}" readonly/>
+>>>>>>> 97bad6ee39054c2f8026e2d09af2703481ce9a83
          <ul>
              <li>Publisher User :{{ post.PublisherUserID }}</li>
              <li>Publish Date:{{ post.PublishDate }}</li>
@@ -94,6 +98,8 @@ margin:0 auto;}
  {% else %}
       <strong>There are no History Message present.</strong>
 {% endif %}
+<a href="/DiscussGroup/Login/user_GroupListNow">Return</a>
+
 
 </div>
 </div>

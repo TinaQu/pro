@@ -36,6 +36,7 @@ def user_login(request):
                 userprofile1 = UserProfile.objects.get(user=user1)
                 # If the account is valid and active, we can log the user in.
                 # We'll send the user back to the homepage.
+<<<<<<< HEAD
                 #if userprofile1.isAdministrator==True:
                 login(request, user)
                 return HttpResponseRedirect('/DiscussGroup/Login/Index')
@@ -45,6 +46,17 @@ def user_login(request):
                 #elif userprofile1.isStudent==True:
                 #    login(request, user)
                   #  return HttpResponseRedirect('/DiscussGroup/Login/Index')
+=======
+                if userprofile1.isAdministrator==True:
+                    login(request, user)
+                    return HttpResponseRedirect('/DiscussGroup/Login/IndexAdministrator')
+                elif userprofile1.isStaff==True:
+                    login(request, user)
+                    return HttpResponseRedirect('/DiscussGroup/Login/IndexStudent')
+                elif userprofile1.isStudent==True:
+                    login(request, user)
+                    return HttpResponseRedirect('/DiscussGroup/Login/IndexStaff')
+>>>>>>> 97bad6ee39054c2f8026e2d09af2703481ce9a83
             else:
                 # An inactive account was used - no logging in!
                 return HttpResponse("Your forum account is disabled.")
@@ -107,6 +119,77 @@ def Index(request):
 #####################################################################################################################33
 
 #######################################################################################################################
+<<<<<<< HEAD
+=======
+def IndexStaff(request):
+    # Request the context of the request.
+    # The context contains information such as the client's machine details, for example.
+    context = RequestContext(request)
+
+    username1=request.user.username
+    user1=User.objects.get(username=username1)
+    userProfile=UserProfile.objects.filter(user=user1)
+    result_list = []
+    DiscussionGroup1=[]
+    # Construct a dictionary to pass to the template engine as its context.
+    # Note the key boldmessage is the same as {{ boldmessage }} in the template!
+    try:
+
+        DiscussionGroup1 = list(DiscussionGroup.objects.filter().exclude(CreateUserId =userProfile))
+       # DiscussionGroup2=list(DiscussionGroup1)
+        print(DiscussionGroup1)
+        result_list = AcceptRecord.objects.filter(UserID=userProfile)
+
+        if result_list and DiscussionGroup1 and userProfile:
+          for AcceptRecord1 in result_list:
+            for discussiongroup1 in  DiscussionGroup1:
+                for user2 in userProfile:
+                   if user2.user == AcceptRecord1.UserID.user:
+                       if discussiongroup1.GroupID == AcceptRecord1.GroupID.GroupID:
+
+                            DiscussionGroup1.remove(discussiongroup1)
+    except User.DoesNotExist:
+        pass
+    # Return a rendered response to send to the client.
+    # We make use of the shortcut function to make our lives easier.
+    # Note that the first parameter is the template we wish to use.
+    return render_to_response('DiscussGroup/IndexStaff.html',{'DiscussionGroup1':DiscussionGroup1}, context)
+#######################################################################################################################
+def IndexAdmin(request):
+    # Request the context of the request.
+    # The context contains information such as the client's machine details, for example.
+    context = RequestContext(request)
+
+    username1=request.user.username
+    user1=User.objects.get(username=username1)
+    userProfile=UserProfile.objects.filter(user=user1)
+    result_list = []
+    DiscussionGroup1=[]
+    # Construct a dictionary to pass to the template engine as its context.
+    # Note the key boldmessage is the same as {{ boldmessage }} in the template!
+    try:
+
+        DiscussionGroup1 = list(DiscussionGroup.objects.filter().exclude(CreateUserId =userProfile))
+       # DiscussionGroup2=list(DiscussionGroup1)
+        print(DiscussionGroup1)
+        result_list = AcceptRecord.objects.filter(UserID=userProfile)
+
+        if result_list and DiscussionGroup1 and userProfile:
+          for AcceptRecord1 in result_list:
+            for discussiongroup1 in  DiscussionGroup1:
+                for user2 in userProfile:
+                   if user2.user == AcceptRecord1.UserID.user:
+                       if discussiongroup1.GroupID == AcceptRecord1.GroupID.GroupID:
+
+                            DiscussionGroup1.remove(discussiongroup1)
+    except User.DoesNotExist:
+        pass
+    # Return a rendered response to send to the client.
+    # We make use of the shortcut function to make our lives easier.
+    # Note that the first parameter is the template we wish to use.
+    return render_to_response('DiscussGroup/IndexAdministrator.html',{'DiscussionGroup1':DiscussionGroup1}, context)
+#######################################################################################################################
+>>>>>>> 97bad6ee39054c2f8026e2d09af2703481ce9a83
 def userHome(request):
     return render_to_response(
         'DiscussGroup/Login/userHome.html',)
@@ -270,6 +353,13 @@ def AddModelActivity(request,offset):
         else:
            return Index(request)
 
+<<<<<<< HEAD
+=======
+           return render_to_response('DiscussGroup/SuccessfulMessage2.html',{}, context)
+        else:
+           return IndexStaff(request)
+
+>>>>>>> 97bad6ee39054c2f8026e2d09af2703481ce9a83
     else:
 
          form=ActivityDetailsform()
@@ -316,6 +406,7 @@ def ShutDownGroup(request,offset):
      except ValueError:
           raise Http404()
      try:
+<<<<<<< HEAD
          acceptRecord1=AcceptRecord.objects.filter(id=offset)
          if acceptRecord1.none():
                DiscussionGroup.objects.filter(id=offset,CreateUserId=userProfile).delete()
@@ -326,6 +417,14 @@ def ShutDownGroup(request,offset):
                return render_to_response('DiscussGroup/SuccessfulShutDown.html',{},context)
 
      except DiscussionGroup.DoesNotExist:
+=======
+         acceptRecord1=AcceptRecord.objects.get(id=offset)
+         AcceptRecord.objects.filter(id=offset,isRefuse=False).delete()
+         DiscussionGroup.objects.filter(id=offset,CreateUserId=userProfile).delete()
+         return render_to_response('DiscussGroup/SuccessfulQuit.html',{},context)
+
+     except AcceptRecord.DoesNotExist:
+>>>>>>> 97bad6ee39054c2f8026e2d09af2703481ce9a83
       pass
 
       #return HttpResponseRedirect('/DiscussGroup/Login/user_GroupListNow')

@@ -1,5 +1,9 @@
 pro
 ===
-Staff:Tim 1234
+User: tina  password:123456   student&Administrator
 
-Administrator: tina 123456
+User:Ge    passeord:1234        student
+
+user:Tim   password:1234       student and staff
+
+
